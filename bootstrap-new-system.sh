@@ -34,6 +34,7 @@ if [[ `uname` == 'Darwin' ]]; then
       brew install htop mysql nginx node ruby fish
   fi
 
+  # errored out here, then what?
   echo 'Tweaking OS X...'
     source 'etc/osx.sh'
 
@@ -70,16 +71,18 @@ open_apps() {
   open http://www.macbartender.com/
   echo 'Chrome:'
   open https://www.google.com/intl/en/chrome/browser/
+  echo 'Chrome Canary:'
+  open http://www.google.com/intl/en/chrome/browser/canary.html
   echo 'Dropbox:'
   open https://www.dropbox.com
   echo 'Firefox:'
   open http://www.mozilla.org/en-US/firefox/new/
   echo 'Flux:'
   open https://justgetflux.com/
-  echo 'Chrome Canary:'
-  open http://www.google.com/intl/en/chrome/browser/canary.html
   echo 'Firefox Aurora:'
   open https://www.mozilla.org/en-US/firefox/channel/
+  echo 'iTerm2:'
+  open http://www.iterm2.com/#/section/home
   echo 'Limechat:'
   open http://limechat.net/mac/
   echo 'Mindful Mynah:'
