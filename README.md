@@ -1,6 +1,12 @@
 # Dotfiles
 Largely pulled from [Paul Miller's dotfiles repo](https://github.com/paulmillr/dotfiles).
 
+Installation is done with simple command set (see “building system from scratch” for setup of new system):
+
+```
+curl --silent https://raw.githubusercontent.com/paulmillr/dotfiles/master/install.sh | sh
+```
+
 ## Disclaimer
 ![I have no idea what I'm doing](https://dl.dropbox.com/u/37968874/img//no-idea.jpg)
 
