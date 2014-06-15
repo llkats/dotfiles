@@ -4,7 +4,7 @@ Largely pulled from [Paul Miller's dotfiles repo](https://github.com/paulmillr/d
 Installation is done with simple command set (see “building system from scratch” for setup of new system):
 
 ```
-curl --silent https://raw.githubusercontent.com/paulmillr/dotfiles/master/install.sh | sh
+curl --silent https://raw.githubusercontent.com/llkats/dotfiles/master/install.sh | sh
 ```
 
 ## Disclaimer
