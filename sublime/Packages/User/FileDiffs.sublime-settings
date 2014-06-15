@@ -1,0 +1,4 @@
+{
+  // opendiff (FileMerge)
+  "cmd": ["opendiff", "$file1", "$file2"]
+}

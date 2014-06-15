@@ -41,11 +41,8 @@ if [[ `uname` == 'Darwin' ]]; then
   echo 'Installing Quick Look plugins...'
     brew tap phinze/homebrew-cask
     brew install brew-cask
-    brew cask install suspicious-package quicklook-json qlmarkdown qlstephen qlcolorcode
+    brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
 fi
-
-echo 'Symlinking config files...'
-  source 'bin/symlink-dotfiles.sh'
 
 echo 'Applying sublime config...'
   st=$(pwd)/sublime/packages
@@ -63,28 +60,41 @@ echo 'Applying sublime config...'
 
 open_apps() {
   echo 'Install apps:'
-  echo 'Firefox:'
-  open http://www.mozilla.org/en-US/firefox/new/
-  echo 'Dropbox:'
-  open https://www.dropbox.com
+  echo '1Password'
+  open https://agilebits.com/downloads
+  echo 'Audacity:'
+  open http://audacity.sourceforge.net/
+  echo 'Audio hijack pro:'
+  open http://audio-hijack-pro.en.softonic.com/mac
+  echo 'Bartender:'
+  open http://www.macbartender.com/
   echo 'Chrome:'
   open https://www.google.com/intl/en/chrome/browser/
-  echo 'Sequel Pro:'
-  open http://www.sequelpro.com
-  echo 'Skype:'
-  open http://www.skype.com/en/download-skype/skype-for-computer/
-  echo 'Toggl:'
-  open https://www.toggl.com
-  echo 'Tower:'
-  open http://www.git-tower.com
-  echo 'Transmission:'
-  open http://www.transmissionbt.com
+  echo 'Dropbox:'
+  open https://www.dropbox.com
+  echo 'Firefox:'
+  open http://www.mozilla.org/en-US/firefox/new/
+  echo 'Flux:'
+  open https://justgetflux.com/
+  echo 'Chrome Canary:'
+  open http://www.google.com/intl/en/chrome/browser/canary.html
+  echo 'Firefox Aurora:'
+  open https://www.mozilla.org/en-US/firefox/channel/
+  echo 'Limechat:'
+  open http://limechat.net/mac/
+  echo 'Mindful Mynah:'
+  open http://www.mindfulmynah.com/
+  echo 'Spotify:'
+  open https://www.spotify.com/us/
   echo 'VLC:'
-  open http://www.videolan.org/vlc/index.html
-  echo 'Pixelmator!'
+  open https://www.videolan.org/vlc/
+  echo 'Xcode:'
+  open https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12
+  echo 'Ynab:'
+  open http://www.youneedabudget.com/download
 }
 
-echo 'Should I give you links for system applications (e.g. Skype, Tower, VLC)?'
+echo 'Should I give you links for system applications (e.g. Limechat, 1Pass, VLC)?'
 echo 'n / y'
 read give_links
 [[ "$give_links" == 'y' ]] && open_apps
