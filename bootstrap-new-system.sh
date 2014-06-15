@@ -63,6 +63,8 @@ open_apps() {
   echo 'Install apps:'
   echo '1Password'
   open https://agilebits.com/downloads
+  echo 'Alfred:'
+  open http://www.alfredapp.com/
   echo 'Audacity:'
   open http://audacity.sourceforge.net/
   echo 'Audio hijack pro:'

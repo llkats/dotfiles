@@ -20,6 +20,11 @@ curl --silent https://raw.githubusercontent.com/llkats/dotfiles/master/install.s
 * Clone:
     * this project (dotfiles) and run `sh bootstrap-new-system.sh`
 
+## Todo
+Figure out the error with `source osx.sh`, line 39 in `bootstrap-new-system.sh`
+Figure out how to move Alfred prefs and apps over
+I don't think the Sublime Text preferences porting stuff works 
+
 ## License
 
 The MIT license.
