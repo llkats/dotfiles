@@ -43,10 +43,16 @@ if [[ `uname` == 'Darwin' ]]; then
     brew tap phinze/homebrew-cask
     brew install caskroom/cask/brew-cask
     brew cask install suspicious-package quicklook-json qlmarkdown qlstephen qlcolorcode
+
+  echo 'Downloading some apps...'
+    brew cask install firefox google-chrome iterm2 spotify sublime-text vlc
 fi
 
+echo 'Installing doge'
+  pip install doge
+
 echo 'Applying sublime config...'
-  st=$(pwd)/sublime/packages
+  st=$(pwd)/sublime/Packages
   as="$HOME/Library/Application Support/Sublime Text 3/Packages"
   asprefs="$as/User/Preferences.sublime-settings"
   if [[ -d "$as" ]]; then
@@ -54,7 +60,7 @@ echo 'Applying sublime config...'
       cp -r $theme $as
     done
     rm $asprefs
-    cp -r $st/pm-themes $as
+    cp -r $st/Snippets $as
   else
     echo "Install Sublime Text http://www.sublimetext.com"
   fi
@@ -67,32 +73,22 @@ open_apps() {
   open http://www.alfredapp.com/
   echo 'Bartender:'
   open http://www.macbartender.com/
-  echo 'Chrome:'
-  open https://www.google.com/intl/en/chrome/browser/
   echo 'Chrome Canary:'
   open http://www.google.com/intl/en/chrome/browser/canary.html
   echo 'Dropbox:'
   open https://www.dropbox.com
-  echo 'Firefox:'
-  open http://www.mozilla.org/en-US/firefox/new/
-  echo 'Bass for Fish:'
-  open https://github.com/edc/bass
   echo 'Flux:'
   open https://justgetflux.com/
   echo 'Firefox Aurora:'
   open https://www.mozilla.org/en-US/firefox/channel/
-  echo 'iTerm2:'
-  open http://www.iterm2.com/#/section/home
   echo 'Limechat:'
   open http://limechat.net/mac/
   echo 'Mindful Mynah:'
   open http://www.mindfulmynah.com/
-  echo 'Spotify:'
-  open https://www.spotify.com/us/
-  echo 'VLC:'
-  open https://www.videolan.org/vlc/
   echo 'Xcode:'
   open https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12
+  echo 'Xscope:'
+  open http://xscopeapp.com/
 }
 
 echo 'Should I give you links for system applications (e.g. Limechat, 1Pass, VLC)?'

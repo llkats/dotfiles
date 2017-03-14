@@ -11,20 +11,8 @@ fish
   fish settings
   doge (pip and stuff)
 
-node
-  bower
-  browserify
-  express
-  grunt-cli
-  gulp
-  keybase
-  nodemon
-  takana
-
 apps
   1pass https://agilebits.com/downloads
-  audacity http://audacity.sourceforge.net/
-  audio hijack pro http://audio-hijack-pro.en.softonic.com/mac
   dropbox
   chrome
   chrome canary http://www.google.com/intl/en/chrome/browser/canary.html
@@ -36,7 +24,6 @@ apps
   vlc https://www.videolan.org/vlc/
   xcode
   xscope
-  ynab http://www.youneedabudget.com/download
 
 utilities
   bartender http://www.macbartender.com/
