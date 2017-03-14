@@ -1,5 +1,5 @@
 # Dotfiles
-Largely pulled from [Paul Miller's dotfiles repo](https://github.com/paulmillr/dotfiles).
+Forked from [Paul Miller's dotfiles repo](https://github.com/paulmillr/dotfiles). I'm keeping the faith for `fish shell` though.
 
 Installation is done with simple command set (see “building system from scratch” for setup of new system):
 
