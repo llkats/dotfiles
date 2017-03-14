@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 dir="$HOME/Developer/llkats"
 mkdir -p $dir
 cd $dir

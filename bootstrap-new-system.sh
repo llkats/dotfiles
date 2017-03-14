@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 # A simple script for setting up OSX dev environment.
 
@@ -29,9 +29,9 @@ if [[ `uname` == 'Darwin' ]]; then
   which -s brew
   if [[ $? != 0 ]]; then
     echo 'Installing Homebrew...'
-      ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/homebrew/go/install)"
+      ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
       brew update
-      brew install htop mysql nginx node ruby fish
+      brew install fish ffmpeg htop ruby
   fi
 
   # errored out here, then what?
@@ -41,8 +41,8 @@ if [[ `uname` == 'Darwin' ]]; then
   # http://github.com/sindresorhus/quick-look-plugins
   echo 'Installing Quick Look plugins...'
     brew tap phinze/homebrew-cask
-    brew install brew-cask
-    brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
+    brew install caskroom/cask/brew-cask
+    brew cask install suspicious-package quicklook-json qlmarkdown qlstephen qlcolorcode
 fi
 
 echo 'Applying sublime config...'
@@ -65,10 +65,6 @@ open_apps() {
   open https://agilebits.com/downloads
   echo 'Alfred:'
   open http://www.alfredapp.com/
-  echo 'Audacity:'
-  open http://audacity.sourceforge.net/
-  echo 'Audio hijack pro:'
-  open http://audio-hijack-pro.en.softonic.com/mac
   echo 'Bartender:'
   open http://www.macbartender.com/
   echo 'Chrome:'
@@ -79,6 +75,8 @@ open_apps() {
   open https://www.dropbox.com
   echo 'Firefox:'
   open http://www.mozilla.org/en-US/firefox/new/
+  echo 'Bass for Fish:'
+  open https://github.com/edc/bass
   echo 'Flux:'
   open https://justgetflux.com/
   echo 'Firefox Aurora:'
@@ -95,8 +93,6 @@ open_apps() {
   open https://www.videolan.org/vlc/
   echo 'Xcode:'
   open https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12
-  echo 'Ynab:'
-  open http://www.youneedabudget.com/download
 }
 
 echo 'Should I give you links for system applications (e.g. Limechat, 1Pass, VLC)?'

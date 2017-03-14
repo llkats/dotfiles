@@ -1,8 +1,11 @@
 [core]
-  excludesfile = /Users/llkats/.gitignore_global
-  editor = nano
+  excludesfile = ~/.gitignore
+  editor = vim
 [user]
   email = llkats@gmail.com
-  name = Lydia Katsamberis
+  name = Lydia Kats
 [color]
   ui = true
+[github]
+  user = paulmillr
+
