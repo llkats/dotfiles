@@ -40,9 +40,8 @@ if [[ `uname` == 'Darwin' ]]; then
 
   # http://github.com/sindresorhus/quick-look-plugins
   echo 'Installing Quick Look plugins...'
-    brew tap phinze/homebrew-cask
-    brew install caskroom/cask/brew-cask
-    brew cask install suspicious-package quicklook-json qlmarkdown qlstephen qlcolorcode
+    brew tap caskroom/cask
+    brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package qlvideo
 
   echo 'Downloading some apps...'
     brew cask install firefox google-chrome iterm2 spotify sublime-text vlc
