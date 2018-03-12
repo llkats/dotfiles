@@ -1,9 +1,6 @@
-doge
-
-set -xU ES_MIN_MEM 256m
-set -xU ES_MAX_MEM 1g
-
 set PATH /usr/local/bin $PATH
+
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # nvm bash alias
 function nvm
@@ -11,7 +8,7 @@ function nvm
 end
 
 # initial source for shell startup
-bass source ~/.nvm/nvm.sh --no-use ';' nvm
+nvm use default --silent
 
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
